@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 x = np.linspace(-10, 10, 100)
 y = x ** 2
 
-# Tracer la courbe
+# Tracer la courbe pour une fonction carrée
 plt.plot(x, y, label="f(x) = x²")
 
 # Ajouter un titre et des labels
@@ -18,4 +18,20 @@ plt.grid(True)
 plt.legend()
 
 # Afficher la figure
+#plt.show()
+
+# Pour une fonction inverse
+a = np.linspace(-10,10,100)
+b = 1/a
+
+plt.plot(a,b, label="f(x)=1/x")
+
+plt.title("f(x)=1/x")
+plt.xlabel("x")
+plt.ylabel("y")
+
+plt.grid
+plt.legend()
+
 plt.show()
+
